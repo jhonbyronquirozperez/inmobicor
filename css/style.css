@@ -1,0 +1,198 @@
+
+/*header*/
+*{
+	margin: 0px;
+	padding: 0px;;
+}
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#ca1515;
+	margin-bottom:20px;
+}
+.inicio{
+	background-image: url(../imagenes/foto7.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	animation: slide 60s infinite;
+	
+}
+@keyframes slide{
+	25%{
+		background-image: url(../imagenes/foto9.jpg);
+	}
+	50%{
+		background-image: url(../imagenes/apartment-5974510_1280.jpg);
+	}
+	75%{
+		background-image: url(../imagenes/foto8.jpg);
+	}
+}
+
+
+/*-----------------------*/
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:850%;
+	float:left;
+}
+.logo img{
+	position: relative;
+	top: -85px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 0px #000000;
+}
+header nav {
+	float:right;
+	line-height:150px;
+}
+header nav a {
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	padding:10px 10px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+}
+/* ------barra de busqueda--------*/
+
+.box {
+	position: absolute;
+	top: 40%;
+	left: 52%;
+	transform: translate(-50%,-50%);
+}
+.box input{
+	position:relative;
+	display: inline-block;
+	font-size: 22px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+.box h1{
+	position: relative;
+	top: -5px;
+	left: 85px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+input[type="text"]
+{
+	background-color: #f2f2f2;
+	width: 340px;
+	height: 33px;
+	border-radius: 25px 0 0 25px;
+	padding: 0 25px;
+	box-shadow: 0px 0px 2px 1px #000000;
+}
+input[type="submit"]
+{
+	position: relative;
+	left: -6px;
+	border-radius: 0 25px   25px 0;
+	height: 33px;
+	width: 100px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color:#fc4000;
+	box-shadow: 0px 0px 2px 1px #000000;
+}
+input[type="submit"]:hover{
+	background: #f56f3a;
+}
+body{
+	background-color: #f3ffcf;
+}
+.blogs-post-container .post-container{
+	display: inline-block;
+	padding-left: 10px;
+	max-width: 30%;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	border-radius: 10px solid #000;
+}
+.blogs-post-container .post-container p{
+	margin-bottom: 35px;
+	font-weight: bold;
+}
+.blogs-post-container .post-container img{
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.blogs-button{
+	border: 1px solid #47cfac;
+	padding: 10px 15px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #22272d;
+	border-top: 35px solid #ca1515;
+	color: #f3ffcf;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.footer-text{
+	font-size: 15px;
+	place-self: center;
+}
+.footer-icons{
+	place-self: center;
+}
+
+/*------------- servicios --------------*/
+
+.servicios-header{
+	
+}
+.servicios-wrapper{
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	height: 180px;
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+.servicios-container h3{
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	font-weight: bold;
+}
+.serviciosblogs-post-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20px;
+	justify-content: center center;
+}
+.serviciosblogs-post-container h3{
+	text-align: center;
+}
+.servicios-container img{
+	width: 70%;
+	border-radius: 10px;
+	
+	
+}
+
